@@ -1,5 +1,5 @@
 import pandas as pd
-import datafitting as datacleaner
+import datafitting as fitting
 
 # pd.set_option('display.max_rows', None)
 # pd.set_option('display.max_columns', None)
@@ -17,6 +17,6 @@ import datafitting as datacleaner
 # pd.set_option('display.max_columns', 6)
 #print(train)
 
-data = datacleaner.DataFitting('D:/Git/pyQML-LocalTest/Tutorial/Data/train.csv')
+data = fitting.DataFitting('D:/Git/pyQML-LocalTest/Tutorial/Data/train.csv')
 data.info()
 print(data.head(5))
