@@ -17,6 +17,7 @@ import datafitting as fitting
 # pd.set_option('display.max_columns', 6)
 #print(train)
 
+#data = pd.read_csv('D:/Git/pyQML-LocalTest/Tutorial/Data/train.csv');
 data = fitting.DataFitting('D:/Git/pyQML-LocalTest/Tutorial/Data/train.csv')
 data.info()
 print(data.head(5))
