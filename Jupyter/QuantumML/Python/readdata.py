@@ -17,6 +17,6 @@ import autocleandatatrain as datacleaner
 # pd.set_option('display.max_columns', 6)
 #print(train)
 
-data = datacleaner.AutoCleanDataTrain('D:/Qiskit/Tutorial/Data/train.csv')
+data = datacleaner.AutoCleanDataTrain('D:/Git/pyQML-LocalTest/Tutorial/Data/train.csv')
 data.info()
 print(data.head(5))
