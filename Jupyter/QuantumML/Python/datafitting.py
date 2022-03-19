@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
-def AutoCleanDataTrain(filename):
+def DataFitting(filename):
     #define train as variable dataset of train data
     pdTrain = pd.read_csv(filename);
     #define label encoder from sklearn
@@ -62,6 +62,8 @@ def AutoCleanDataTrain(filename):
         if (dataType == "object"):
             pdTrain[columnName] = lblEncoder.fit_transform(pdTrain[columnName].astype(str))
             totalRow = len(pdTrain.index)
+
+    #Machine learning algorithms only work with numbers
 
     #pdTrain.info();
     return pdTrain
